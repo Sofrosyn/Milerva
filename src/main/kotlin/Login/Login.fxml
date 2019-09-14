@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="4.0" prefHeight="477.0" prefWidth="369.0" style="-fx-background-color: #0ee027;">
+         <children>
+            <Label layoutX="123.0" layoutY="186.0" text="Milerva">
+               <font>
+                  <Font name="Marlett" size="39.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="239.0" text="Bringing computational analysis to SMES in Africa" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="10.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="135.0" layoutY="74.0">
+               <image>
+                  <Image url="@../../../../../../AppData/Local/Temp/icons8_Mind_Map_100px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="246.0" layoutY="183.0" text="TM">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <Pane layoutX="399.0" layoutY="80.0" prefHeight="328.0" prefWidth="317.0">
+         <children>
+            <JFXTextField fx:id="loginUsername" labelFloat="true" layoutX="16.0" layoutY="58.0" prefHeight="25.0" prefWidth="286.0" promptText="Username" />
+            <JFXPasswordField fx:id="loginPassword" labelFloat="true" layoutX="23.0" layoutY="127.0" prefHeight="25.0" prefWidth="286.0" promptText="Password" />
+            <JFXComboBox fx:id="loginStatus" labelFloat="true" layoutX="22.0" layoutY="189.0" prefHeight="25.0" prefWidth="286.0" promptText="Status" />
+            <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="23.0" layoutY="254.0" prefHeight="40.0" prefWidth="286.0" ripplerFill="#0ce822" style="-fx-background-color: #0ee027;" text="Login">
+               <font>
+                  <Font name="Segoe UI Bold" size="21.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label layoutX="452.0" layoutY="433.0" text="Milerva is a brain-child of SOFROSYN INC ">
+         <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="514.0" layoutY="466.0" text="All rights reserve">
+         <font>
+            <Font name="Segoe UI Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginClose" layoutX="725.0" layoutY="12.0" style="-fx-background-color: gray;" text="X" textFill="#970a0a">
+         <font>
+            <Font name="Segoe UI Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
